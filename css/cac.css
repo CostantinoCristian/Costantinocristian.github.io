@@ -63,6 +63,10 @@ nav a:hover {
     width: 150px;
     border-radius: 50%;
 }
+.hero .img-estudio {
+    width: 150px;
+    border-radius: 0%;
+}
 
 .hero-text {
     max-width: 600px;
@@ -162,14 +166,14 @@ nav a:hover {
 
 .card-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: left;
 }
 
 /* Imagen a la derecha */
 .card img {
-    max-width: 150px;
+    max-width: 250px;
+    min-width: 150px ;
     border-radius: 8px;
 }
 
@@ -202,4 +206,14 @@ nav a:hover {
     .card ul {
         margin-top: 20px;
     }
+}
+
+.aPretty {
+    color: inherit;
+    text-decoration: none;
+}
+
+.aPretty:hover {
+    text-decoration: none; 
+    color: inherit;
 }

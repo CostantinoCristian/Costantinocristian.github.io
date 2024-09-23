@@ -13,11 +13,11 @@
 			animation_speed: 'fast', /* fast/slow/normal */
 			ajaxcallback: function() {},
 			slideshow: 5000, /* false OR interval time in ms */
-			autoplay_slideshow: false, /* true/false */
+			autoplay_slideshow: true, /* true/false */
 			opacity: 0.80, /* Value between 0 and 1 */
 			show_title: true, /* true/false */
 			allow_resize: true, /* Resize the photos bigger than viewport. true/false */
-			allow_expand: true, /* Allow the user to expand a resized image. true/false */
+			allow_expand: false, /* Allow the user to expand a resized image. true/false */
 			default_width: 500,
 			default_height: 344,
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
