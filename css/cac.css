@@ -217,3 +217,27 @@ nav a:hover {
     text-decoration: none; 
     color: inherit;
 }
+
+footer {
+    background-color: #333; /* Color de fondo similar al header */
+    color: #fff; /* Texto en blanco para contraste */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado pequeño */
+    font-size: 0.8em; /* Fuente más pequeña */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Espaciado entre las líneas */
+}
+
+footer a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
