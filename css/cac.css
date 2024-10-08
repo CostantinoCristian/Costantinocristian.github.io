@@ -298,6 +298,7 @@ footer a:hover {
 
 .project-image {
     max-width: 250px;
+    min-width: 250px;
     height: auto;
     border-radius: 8px;
 }
