@@ -113,7 +113,6 @@ nav a:hover {
     margin-left: auto;
 }
 
-/* Funcionamiento en pantalla del movil */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -177,7 +176,6 @@ nav a:hover {
     }
 }
 
-/* Cuadrícula para la pagina de estudios */
 .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -203,7 +201,7 @@ nav a:hover {
 .card h2 {
     margin-bottom: 20px;
     font-size: 1.5em;
-    text-align: center;  /* Centrar el título */
+    text-align: center;
 }
 
 .card-content {
@@ -212,14 +210,12 @@ nav a:hover {
     text-align: left;
 }
 
-/* Imagen a la derecha */
 .card img {
     max-width: 250px;
     min-width: 150px ;
     border-radius: 8px;
 }
 
-/* Lista descriptiva a la izquierda */
 .card ul {
     list-style-type: none;
     padding-left: 20px;
@@ -230,7 +226,6 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .content-grid {
         grid-template-columns: 1fr;
@@ -261,60 +256,78 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333; /* Color de fondo similar al header */
-    color: #fff; /* Texto en blanco para contraste */
-    text-align: center; /* Centrar el texto */
-    padding: 10px 0; /* Espaciado pequeño */
-    font-size: 0.8em; /* Fuente más pequeña */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 .footer-content p {
-    margin: 5px 0; /* Espaciado entre las líneas */
+    margin: 5px 0;
 }
 
 footer a {
-    color: #fff; /* Enlaces en blanco */
-    text-decoration: none; /* Sin subrayado por defecto */
+    color: #fff;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    text-decoration: underline;
 }
 
 .projects-section {
-    max-width: 1200px; /* Limitar el ancho total */
-    margin: 20px auto; /* Centrar la sección */
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
+    
 }
 
 .project-card {
-    display: flex; /* Usar flexbox para la tarjeta */
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Ocultar el desbordamiento */
-    margin-bottom: 20px; /* Espacio entre tarjetas */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .project-image {
-    width: 150px; /* Ancho fijo para la imagen */
-    height: auto; /* Mantener la proporción */
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .project-info {
-    padding: 15px; /* Espaciado interno */
-    flex: 1; /* Tomar el espacio restante */
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .project-image {
+        margin-bottom: 15px; 
+    }
+    .project-info {
+        margin-left: 0; 
+        text-align: center;
+    }
 }
 
 .project-link {
-    display: inline-block; /* Enlace como bloque */
-    margin-top: 10px; /* Espacio superior */
-    color: #007bff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
+    display: inline-block; 
+    margin-top: 10px; 
+    color: #007bff; 
+    text-decoration: none;
 }
 
 .project-link:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
+    text-decoration: underline;
 }
