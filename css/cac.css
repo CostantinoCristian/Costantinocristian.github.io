@@ -64,10 +64,22 @@ nav a:hover {
     gap: 20px;
 }
 
+
+.hero .img-container {
+    width: 306px;
+    height: 306px;
+    border-radius: 50%;
+    background: conic-gradient(yellow,greenyellow,blue,greenyellow, red,greenyellow, yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero img {
-    width: 150px;
+    width: 300px;
     border-radius: 50%;
 }
+
 .hero .img-estudio {
     width: 150px;
     border-radius: 0%;
@@ -142,8 +154,19 @@ nav a:hover {
         text-align: center;
     }
 
+    .hero .img-container {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        background: conic-gradient(yellow,greenyellow,blue,greenyellow, red,greenyellow, yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hero img {
-        width: 100px;
+        width: 150px;
+        border-radius: 50%;
     }
 
     .hero-text {
