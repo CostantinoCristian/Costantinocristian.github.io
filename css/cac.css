@@ -10,13 +10,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 5px 10px;
+    background-color: rgba(11,11,11,1);
     color: white;
 }
 
 .logo img {
-    height: 70px;
+    height: 100px;
+    border-radius: 50%;
+    mask-image: radial-gradient(rgba(11,11,11,1),rgba(11,11,11,0.8),rgba(11,11,11,0.4),rgba(11,11,11,0.1),rgba(11,11,11,0));
 }
 
 
@@ -256,7 +258,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(11,11,11,1);
     color: #fff;
     text-align: center;
     padding: 10px 0;
