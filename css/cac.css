@@ -17,7 +17,7 @@ header {
 .logo img {
     height: 100px;
     border-radius: 50%;
-    mask-image: radial-gradient(rgba(11,11,11,1),rgba(11,11,11,0.8),rgba(11,11,11,0.4),rgba(11,11,11,0.1),rgba(11,11,11,0));
+    mask-image: radial-gradient(rgba(11,11,11,1),rgba(11,11,11,1),rgba(11,11,11,0.9),rgba(11,11,11,0.5),rgba(11,11,11,0.1),rgba(11,11,11,0));
 }
 
 
@@ -127,80 +127,6 @@ nav a:hover {
     margin-left: auto;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        font-size: 1.2em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .header-right {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero .img-container {
-        width: 82px;
-        height: 82px;
-        border-radius: 50%;
-        background: conic-gradient(yellow,greenyellow,blue,greenyellow, red,greenyellow, yellow);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero img {
-        width: 150px;
-        border-radius: 50%;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-
-    nav ul {
-        gap: 5px;
-    }
-
-    .header-right {
-        gap: 5px;
-    }
-
-    .hero img {
-        width: 80px;
-    }
-
-    .hero-text h1 {
-        font-size: 1.5em;
-    }
-
-    .hero-text p {
-        font-size: 1em;
-    }
-}
-
 .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -260,25 +186,6 @@ nav a:hover {
 
 .ver-cert-btn:hover {
     transform:scale3d(1.1,1.1,1.1);
-}
-
-@media (max-width: 768px) {
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .card-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .card img {
-        margin-top: 20px;
-    }
-
-    .card ul {
-        margin-top: 20px;
-    }
 }
 
 .aPretty {
@@ -346,7 +253,65 @@ footer a:hover {
     text-align: justify;
 }
 
+.project-link {
+    display: inline-block; 
+    margin-top: 10px; 
+    color: #007bff; 
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .img-container {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        background: conic-gradient(yellow,greenyellow,blue,greenyellow, red,greenyellow, yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        padding: 10px 20px;
+    }
+
     .project-card {
         flex-direction: column; 
         align-items: center;
@@ -359,15 +324,53 @@ footer a:hover {
         margin-left: 0; 
         text-align: justify;
     }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card img {
+        margin-top: 20px;
+    }
+
+    .card ul {
+        margin-top: 20px;
+    }
+    .prettyPhoto .pp_thumb {
+        display: none;
+    }
 }
 
-.project-link {
-    display: inline-block; 
-    margin-top: 10px; 
-    color: #007bff; 
-    text-decoration: none;
-}
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
 
-.project-link:hover {
-    text-decoration: underline;
+    nav ul {
+        gap: 5px;
+    }
+
+    .header-right {
+        gap: 5px;
+    }
+
+    .hero img {
+        width: 80px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+    .prettyPhoto .pp_thumb {
+        display: none;
+    }
 }

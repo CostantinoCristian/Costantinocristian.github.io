@@ -18,7 +18,7 @@
 			show_title: true, /* true/false */
 			allow_resize: true, /* Resize the photos bigger than viewport. true/false */
 			allow_expand: false, /* Allow the user to expand a resized image. true/false */
-			default_width: 500,
+			default_width: 650,
 			default_height: 344,
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
 			theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
@@ -578,10 +578,10 @@
 			
 				while (!fitting){
 					if((pp_containerWidth > windowWidth)){
-						imageWidth = (windowWidth - 200);
+						imageWidth = (windowWidth - 50);
 						imageHeight = (height/width) * imageWidth;
 					}else if((pp_containerHeight > windowHeight)){
-						imageHeight = (windowHeight - 200);
+						imageHeight = (windowHeight - 150);
 						imageWidth = (width/height) * imageHeight;
 					}else{
 						fitting = true;
