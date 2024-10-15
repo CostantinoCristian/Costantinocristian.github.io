@@ -266,7 +266,7 @@ footer a:hover {
 
 @media (max-width: 1050px) {
     .prettyPhoto .pp_thumb {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -372,7 +372,9 @@ footer a:hover {
     .hero-text p {
         font-size: 1em;
     }
+}
+@media (hover: none) {
     .prettyPhoto .pp_thumb {
         display: none!important;
     }
-}
+  }
