@@ -4,5 +4,6 @@ $(document).ready(function(){
         theme: 'facebook',
         social_tools: false,
         allow_resize: true,
+        overlay_gallery: false
     });
 });
