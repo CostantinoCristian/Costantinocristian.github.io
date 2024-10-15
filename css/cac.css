@@ -264,6 +264,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 1050px) {
+    .prettyPhoto .pp_thumb {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
     header {
@@ -340,9 +345,6 @@ footer a:hover {
 
     .card ul {
         margin-top: 20px;
-    }
-    .prettyPhoto .pp_thumb {
-        display: none;
     }
 }
 
